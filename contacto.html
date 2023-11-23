@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Counter-Strike 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+  <link href="css/styles_contacto.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h2>Counter-Strike 2</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">INICI</a></li>
+        <li><a href="quees.html">QUÈ ÉS?</a></li>
+        <li><a href="galeria.html">GALERIA</a></li>
+        <li><a href="equipos.html">EQUIPS</a></li>
+        <li><a href="contacto.html">REGISTRAT</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h2>Registrat</h2>
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="gracies.html" method="get">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="nom@gmail.com" name="uname" required>
+
+            <label for="uname"><b>Nom d'Steam</b></label>
+            <input type="text" placeholder="Nom" name="uname" required>
+
+            <label for="psw"><b>Contrasenya</b></label>
+            <input type="password" placeholder="Posa la contrasenya aquí" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeteix la Contrasenya</b></label>
+            <input type="password" placeholder="Repeteix la contrasenya" name="psw-repeat" id="psw-repeat" required>
+
+            <label for="uname"><b>País</b></label>
+            <input type="text" placeholder="Espanya" name="uname" required>
+
+            <button type="submit">Registrat</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </article>
+  </section>
+
+  <footer>
+    <p>By Marc Musqueras
+      mmusquera@ies-eugeni.cat</p>
+  </footer>
+
+</body>
+
+</html>
